@@ -103,6 +103,32 @@ a:hover{
 .title-total2 {
   padding: 2.5em 1.5em 1.5em 1.5em;
 }
+  
+.desc2{
+	max-width:500px;
+	width:100%;
+	transform-origin:center;
+	animation: loadBounce 0.5s ease-in-out forwards;
+	p {
+		transition:all 1s linear;
+		display:inline;
+		color:#fff;
+		text-decoration:none;
+		text-transform:uppercase;
+		font-weight:600;
+		padding-bottom:5px;
+		background: linear-gradient(to right, rgba(0,209,177,1) 0%,rgba(39,143,198,1) 98%);
+		background-size:0px 2px;
+		background-repeat: no-repeat;
+		background-position:left 85%;
+		text-shadow:0;
+		
+		&:hover{
+			background-size:100% 2px;
+			text-shadow:0 2.5px 4px rgba(0,0,0,0.5);
+		}
+	}
+}
 </style>
 </head>
 <body>
