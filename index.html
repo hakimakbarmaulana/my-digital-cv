@@ -101,6 +101,27 @@ a:hover{
 .title-total2 {
   padding: 2.5em 1.5em 1.5em 1.5em;
 }
+// Animation 3
+// Underline - Left to Right
+.desc2 > a {
+	display: inline-block;
+	position: relative;
+	&:after {
+		content: "";
+		display: block;
+		position: absolute;
+		width: 0;
+		bottom: 0;
+		height: 2px;
+		margin: -5px 0;
+		left: 0;
+		background-color: white;
+		transition: all 0.4s ease-in 0s;
+	}
+	&:hover:after {
+		width: 100%;
+	}
+}
 </style>
 </head>
 <body>
@@ -128,7 +149,7 @@ a:hover{
         <h2>You're invited !</h2>
         <div class="desc2">
           <p>Let's join to my <strong>proposal seminar</strong> on Wednesday 2 March 2022 at 1 pm. Title :</p>
-          <p style="text-align:center;"><strong>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</strong></p>
+          <a style="text-align:center;"><strong>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</strong></a>
         </div>
       </div>
     </div>
