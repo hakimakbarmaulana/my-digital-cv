@@ -118,23 +118,6 @@ body {
         line-height: 20px;
         transform: translateZ(0);
     }
-    svg {
-        vertical-align: top;
-        display: inline;
-        line-height: 1;
-        width: 13px;
-        height: 20px;
-        position: relative;
-        left: -2px;
-        fill: none;
-        stroke-linecap: round;
-        stroke-linejoin: round;
-        stroke-width: 1px;
-        stroke: var(--line);
-        stroke-dasharray: 7.95 30;
-        stroke-dashoffset: var(--stroke-dashoffset, 46);
-        transition: stroke-dashoffset var(--stroke-duration, .15s) var(--stroke-easing, linear) var(--stroke-delay, 0s);
-    }
     &:hover {
         --background-size: 0%;
         --background-delay: 0s;
@@ -146,6 +129,8 @@ body {
 }
 
 .underline2{
+  text-decoration: none;
+  color: #0074D9;
   position: relative;
 }
 
@@ -195,11 +180,10 @@ body {
         <div class="desc2">
           <p>Let's join to my <strong>proposal seminar</strong> on Wednesday 2 March 2022 at 1 pm. With title :</p>
           <p style="text-align:center;"><strong>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</strong></p>
-          <a href="" class="underline">
+          <a href="" class="underline" style="text-align:center;">
               <span><strong>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</strong></span>
-              <svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
           </a>
-          <p>
+          <p style="text-align:center;">
             You can join with clicking<br> <a href="https://univ-brawijaya.zoom.us/j/92777697747?pwd=dEZQcTdNNk5SQ3lxcmtvREhkUWNiZz09" class="underline2">this zoom link.</a>
           </p>
         </div>
