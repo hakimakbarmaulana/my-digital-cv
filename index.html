@@ -128,6 +128,60 @@ body {
   }
 }
 
+.topic {
+text-align:center;
+display: block;
+font-family: sans-serif;
+text-decoration: none;
+font-weight: bold;
+color: black;
+}
+
+.topic span {
+background-image: linear-gradient(to bottom, white 70%, transparent 70%), linear-gradient(to right, #7B7EAD 33%, #84A8C1 33%, #84A8C1 66%, #9BCCB9 66%);
+background-size: 306% 100%;
+background-position: 100% 0;
+transition: 1s background-position;
+}
+.topic:hover span {
+background-position: 0%;
+}
+
+.link {
+   /* RESET */
+   text-decoration: none;
+   /* line-height: 1; */
+   
+   position: relative;
+   z-index: 0;
+   display: inline-block;
+   padding: 1px 1px;
+   overflow: hidden;
+   color: #333;
+   vertical-align: bottom;
+   transition: color .3s ease-out;
+}
+
+.link::before {
+   content: "";
+   position: absolute;
+   z-index: -1;
+   top: 0;
+   left: 0;
+   transform: translateY(calc(100% - 2px));
+   width: 100%;
+   height: 100%;
+   background-image: linear-gradient(60deg, #64b3f4 0%, #c2e59c 100%);
+   transition: transform .25s ease-out;
+}
+
+.link:hover { 
+   color: #fff; 
+}
+.link:hover::before {
+   transform: translateY(0);
+   transition: transform .25s ease-out;
+}
 </style>
 </head>
 <body>
@@ -154,9 +208,9 @@ body {
       <div class="title-total2"> 
         <h2>You're invited !</h2>
         <div class="desc2">
-          <p>Let's join to my <strong>proposal seminar</strong> on Wednesday 2 March 2022 at 1 pm. With title :</p>
-          <p style="text-align:center;"><strong>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</strong></p>
-<!--           <a href="#" class="topic">Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</a> -->
+          <p>Let's join to my <strong><a class="link" href="">proposal seminar</a></strong> on Wednesday 2 March 2022 at 1 pm. With title :</p>
+          <!-- <p style="text-align:center;"><strong>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</strong></p> -->
+          <a href="#" class="topic"><span>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</span></a>
           <p style="text-align:center;">
             You can join by clicking<br> <a href="https://univ-brawijaya.zoom.us/j/92777697747?pwd=dEZQcTdNNk5SQ3lxcmtvREhkUWNiZz09" class="underline2">this zoom link.</a>
           </p>
@@ -167,5 +221,3 @@ body {
   </div>
 </body>
 </html>
-
-
