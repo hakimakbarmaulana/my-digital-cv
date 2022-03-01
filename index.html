@@ -145,14 +145,13 @@ $violet: #7B7EAD;
   top: 50%;
   left: 50%;
   transform: translate3d(-50%, -50%, 0);
+  background-image: linear-gradient(to bottom, white 70%, transparent 70%), linear-gradient(to right, $violet 33%, $blue 33%, $blue 66%, $teal 66%);
+  background-size: 306% 100%;
+  background-position: 100% 0;
+  transition: 1s background-position;
 }
-.topic span {
-    background-image: linear-gradient(to bottom, white 70%, transparent 70%), linear-gradient(to right, $violet 33%, $blue 33%, $blue 66%, $teal 66%);
-    background-size: 306% 100%;
-    background-position: 100% 0;
-    transition: 1s background-position;
-  }
-.topic:hover span {
+
+.topic:hover {
     background-position: 0%;
   }
 
@@ -184,7 +183,7 @@ $violet: #7B7EAD;
         <div class="desc2">
           <p>Let's join to my <strong>proposal seminar</strong> on Wednesday 2 March 2022 at 1 pm. With title :</p>
 <!--           <p style="text-align:center;"><strong>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</strong></p> -->
-          <a href="#" class="topic"><span>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</span></a>
+          <a href="#" class="topic">Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</a>
           <p style="text-align:center;">
             You can join by clicking<br> <a href="https://univ-brawijaya.zoom.us/j/92777697747?pwd=dEZQcTdNNk5SQ3lxcmtvREhkUWNiZz09" class="underline2">this zoom link.</a>
           </p>
