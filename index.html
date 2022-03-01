@@ -144,7 +144,29 @@ body {
         --stroke-delay: .195s;
     }
 }
-  
+
+.underline2{
+  position: relative;
+}
+
+.underline2::before{
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0;
+  height: 2px;
+  background-color: #0074D9;
+  transition: width 0.6s cubic-bezier(0.25, 1, 0.5, 1);
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .underline2:hover::before{
+    left: 0;
+    right: auto;
+    width: 100%;
+  }
+}
 </style>
 </head>
 <body>
@@ -178,7 +200,7 @@ body {
               <svg viewBox="0 0 13 20"><polyline points="0.5 19.5 3 19.5 12.5 10 3 0.5" /></svg>
           </a>
           <p>
-          hahaha
+            You can join with clicking<br> <a href="https://univ-brawijaya.zoom.us/j/92777697747?pwd=dEZQcTdNNk5SQ3lxcmtvREhkUWNiZz09" class="underline2">this zoom link.</a>
           </p>
         </div>
       </div>
