@@ -13,6 +13,12 @@ body {
   justify-items: center;
   background-image: url('https://miro.medium.com/max/1400/1*WCKtPPTSgqh1yIP3s-5cSw.jpeg'); /*linear-gradient(to top, #96fbc4 0%, #f9f586 100%);*/
 }
+
+.bigger-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
 .card {
   background: #fff;
   border-radius: 4px;
@@ -51,7 +57,7 @@ body {
 }
 
 .title-total {
-  padding: 2.5em 1.5em 1.5em 1.5em;
+  padding: 2.0em 1.5em 1.5em 1.5em;
 }
 
 .portada {
@@ -80,7 +86,6 @@ body {
 .card2 {
   margin-top: 10px;
   background: #fff;
-  border-radius: 4px;
   box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
   max-width: 400px;
   display: flex;
@@ -100,7 +105,7 @@ body {
   font-size: 12px;
 }
 .title-total2 {
-  padding: 2.5em 1.5em 1.5em 1.5em;
+  padding: 1.5em 1.5em 0.5em 1.5em;
 }
   
 .underline2{
@@ -182,42 +187,173 @@ background-position: 0%;
    transform: translateY(0);
    transition: transform .25s ease-out;
 }
+
+.card3 {
+  margin-left: 10px;
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  max-width: 400px;
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  position: relative;
+}
+
+.card3 h2 {
+  margin: 0;
+  padding: 0 1rem;
+  color: green;
+}
+
+.card3 .desc3 {
+  padding: 0.5rem 1rem;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+}
+.title-total3 {
+  padding: 1.5em 0.5em 0.5em 0.5em;
+<!--  padding: 2.5em 1.5em 1.5em 1.5em;-->
+}
+.l1-img{
+    width: 60px;
+    height: 60px;
+    -webkit-border-radius: 60px;
+    -webkit-background-clip: padding-box;
+    -moz-border-radius: 60px;
+    -moz-background-clip: padding;
+    border-radius: 50%;
+    background-clip: padding-box;
+    margin: 5px 5px 5px 5px;
+    float: left;
+    background-size: cover;
+    background-position: center;
+}
+iframe[seamless] {
+    border: none;
+}
+.embed-map {
+  background: #fff;
+  box-shadow: 0px 14px 80px rgba(34, 35, 58, 0.5);
+  display: flex;
+  flex-direction: row;
+  border-radius: 15px;
+  position: relative;
+  padding: 0.01em 0.5em;
+}
+.embed-map h2 {
+  margin: 0;
+  padding: 0 1rem;
+  color: green;
+}
+.embed-map p {
+  margin: 0px 8px;
+}
 </style>
 </head>
 <body>
-  <div class="container">
-  <div class="card">
-    <div class="card-text">
-      <div class="portada">
+  <div class="biggest_container">
+    <div class="bigger-container">
+      <div class="container">
+        <div class="card">
+          <div class="card-text">
+            <div class="portada"></div>
+            <div class="title-total">
+              <div class="title">Mathematics Mayor</div>
+              <h2>Hakim Akbar</h2>
+              <div class="desc">I love mathematics and coding especially for analytical data, data processing, image processing, and mathematical modeling.</div>
+              <div class="actions">
+                <a href="https://t.me/hakimakbar" class="button"><i class="fa fa-telegram"></i></a>
+                <a href="https://www.instagram.com/hakimakbarmaulana" class="button"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/in/mochamad-hakim-akbar-assidiq-maulana-45b2a1216" class="button"><i class="fa fa-linkedin"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=100007099277951" class="button"><i class="fa fa-facebook"></i></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="card2">
+          <div class="card-text2">
+            <div class="title-total2">
+              <h2>You're invited !</h2>
+              <div class="desc2">
+                <p>Let's join to my <strong><a class="link" href="">proposal seminar</a></strong> on Wednesday 2 March 2022 at 1 pm. With title :</p>
+                <a href="#" class="topic"><span>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</span></a>
+                <p style="text-align:center;">
+                  You can join by clicking<br> <a href="https://univ-brawijaya.zoom.us/j/92777697747?pwd=dEZQcTdNNk5SQ3lxcmtvREhkUWNiZz09" class="underline2">this zoom link.</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="title-total">   
-        <div class="title">Mathematics Mayor</div>
-        <h2>Hakim Akbar</h2>
-        <div class="desc">I love mathematics and coding especially for analytical data, data processing, image processing, and mathematical modeling.</div>
-        <div class="actions">
-          <a href="https://t.me/hakimakbar" class="button"><i class="fa fa-telegram"></i></a>
-          <a href="https://www.instagram.com/hakimakbarmaulana" class="button"><i class="fa fa-instagram"></i></a>
-          <a href="https://www.linkedin.com/in/mochamad-hakim-akbar-assidiq-maulana-45b2a1216" class="button"><i class="fa fa-linkedin"></i></a>
-          <a href="https://www.facebook.com/profile.php?id=100007099277951" class="button"><i class="fa fa-facebook"></i></a>
+      <div class="container2">
+        <div class="card3">
+          <div class="card-text3">
+            <div class="title-total3">
+              <div class="dos-pem">
+                <h2>Dosen Pembimbing</h2>
+                <div class="desc3">
+                  <div class="l1-img" style="background-image: url(https://scholar.googleusercontent.com/citations?view_op=medium_photo&user=0Ol-zp0AAAAJ&citpid=2)">
+                  </div>
+                  <div class="des-img">
+                    <div class="name-person">
+                      <a href="https://scholar.google.com/citations?user=0Ol-zp0AAAAJ&hl=en&oi=ao" style="text-decoration: none;">
+                        <h2>Syaiful Anam, S.Si., M.T., Ph.D.</h2>
+                      </a>
+                    </div>
+                    <div class="desc-person">Dosen departemen matematika</div>
+                  </div>
+                </div>
+              </div>
+              <div class="dos-peng" style="margin-top: 10px;">
+                <h2>Dosen Penguji</h2>
+                <div>
+                  <div class="desc3">
+                    <div class="l1-img" style="background-image: url(https://scholar.google.com/citations/images/avatar_scholar_128.png)">
+                    </div>
+                    <div class="des-img">
+                      <div class="name-person">
+                        <a href="https://scholar.google.com/citations?user=fyfHcPYAAAAJ&hl=en&oi=ao" style="text-decoration: none;">
+                          <h2>Indah Yanti, S.Si., M.Si.</h2>
+                        </a>
+                      </div>
+                      <div class="desc-person">Dosen departemen matematika</div>
+                    </div>
+                  </div>
+                </div>
+                <div>
+                  <div class="desc3">
+                    <div class="l1-img" style="background-image: url(https://scholar.googleusercontent.com/citations?view_op=view_photo&user=B2wTWLMAAAAJ&citpid=4)">
+                    </div>
+                    <div class="des-img">
+                      <div class="name-person">
+                        <a href="https://scholar.google.com/citations?user=B2wTWLMAAAAJ&hl=en&oi=ao" style="text-decoration: none;">
+                          <h2>Dr. Isnani Darti, S.Si., M.Si.</h2>
+                        </a>
+                      </div>
+                      <div class="desc-person">Dosen departemen matematika</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <img src="logo_rmbg.png" width="100" height="100" style="margin-top: 10px;position: absolute;-ms-transform: translateX(150%);transform: translateX(150%);"></img>
         </div>
       </div>
     </div>
-  </div>
-  <div class="card2">
-    <div class="card-text2">
-      <div class="title-total2"> 
-        <h2>You're invited !</h2>
-        <div class="desc2">
-          <p>Let's join to my <strong><a class="link" href="">proposal seminar</a></strong> on Wednesday 2 March 2022 at 1 pm. With title :</p>
-          <!-- <p style="text-align:center;"><strong>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</strong></p> -->
-          <a href="#" class="topic"><span>Time Series Clustering Number of Covid19 Patients in Indonesia Using Fuzzy C-Medoids Based on Dynamic Time Warping</span></a>
-          <p style="text-align:center;">
-            You can join by clicking<br> <a href="https://univ-brawijaya.zoom.us/j/92777697747?pwd=dEZQcTdNNk5SQ3lxcmtvREhkUWNiZz09" class="underline2">this zoom link.</a>
-          </p>
+    <div class="embed-map" style="margin-top:10px;">
+      <div class="desc-map">
+        <h2>Clustering Result Overview</h2>
+        <div>
+          <p>Click on <i>openstreetmap</i> radio button at layer control to see full map</p>
         </div>
       </div>
     </div>
-  </div>
+      <iframe src="test3.html" seamless onload='javascript:(function(o){o.style.height=o.contentWindow.document.body.scrollHeight+"px";}(this));'
+            style="height:200px;width:100%;border:none;overflow:hidden;"></iframe>
   </div>
 </body>
 </html>
